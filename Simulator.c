@@ -46,16 +46,10 @@ int main(int argc, const char * argv[]) {
     out = fopen(argv[2], "w");
     
     
-/*
-    
-    f = fopen("/Users/mrnatural028/Desktop/multiplyMachine.txt", "r");
-    out = fopen("/Users/mrnatural028/Desktop/simulatorTestOutput.txt", "w");
-
-*/
-    
-    //Initialize registers.
+    //Initialize registers and memory.
     
     init_Registers();
+    init_Memory();
     
     
     //Populate instruction Memory with all machine code
