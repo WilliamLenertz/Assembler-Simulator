@@ -38,10 +38,6 @@ We do believe this assembler works for all cases except when tabs are used for w
 3.)README.txt
 - This is the file you are reading right now. It provides the instructions, rules, and other information about the assembler before use.
 
-4.)TestSuite
-- This is a directory full of test cases. For a detailed list of the test cases inside as well as what each of them tests, please refer to the list at the bottom of this page.
-
-
 
 
 
@@ -152,52 +148,3 @@ $make clean
 6.)To view the following machine code or any errors encountered, please open the “machineCodeName.txt” file using the “less” command. Please note that the machine code will also be printed to the screen for your convenience.
 
 
-
-
-
-
-
-
-
-			***TestCases***
-
-We are very serious about our test cases. To view the test cases, please open the “Test Suite” directory from the file. You can see our list of test cases there. To run each test case, please provide the file path to the test case along with the test case name.
-
-File Name, and cases it tests:
-
-1.)CommentTest.txt
-- Tests ignoring of comments
-- Tests running of correctly formatted assembly code
-- Tests all opcodes available in the UST-3400 when correctly formatted.
-
-2.) InvalidLabelNumber.txt
-- Tests error when a label name begins with a number
-
-3.) RepeatLabel.txt
-- Tests error when a label name is repeated in assembly code
-
-4.) InvalidOpcode.txt
-- Tests if an opcode is incorrect
-
-5.) InvalidLabelChar.txt
-- Tests if a label has an invalid character in it.
-
-6.) InvalidIType.txt
-- Tests error when invalid I-Type instruction is given
-- (‘hi’ is second input after opcode on line 1)
-
-7.) InvalidRType.txt
-- tests error when invalid R-Type instruction is given
-- (‘hi’ is first input after opcode on line 2)
-
-8.)OffsetTooLarge.txt
-- Tests error when offset field is too large for I-Type instructions
-
-9.)LabelTooLong.txt
-- Tests whether a label given is too long.
-
-10.) add10.txt
-- Tests sw for proper machine code.
-
-11.) jalrTest.txt
-- tests proper assembly of jalr opcode.
