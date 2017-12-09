@@ -36,8 +36,6 @@ We do believe our simulator works for all assembly code input.
 3.)README.txt
 - This is the file you are reading right now. It provides the instructions, rules, and other information about the simulator before use.
 
-4.)TestSuite
-- This is a directory full of test cases. For a detailed list of the test cases inside as well as what each of them tests, please refer to the list at the bottom of this page.
 
 
 
@@ -102,31 +100,4 @@ $make
 ****************
 $make clean
 ****************
- 
 
-
-			***Test Cases***
-
-NOTE: These test cases are written in assembly code. They must be run through an assembler (like The_Big_Black_Box_That_Rocks!!!) before they can be input into the simulator.
-
-
-1.)Test1: SimpleLoop.txt
-
-- This is a simple loop that decrements a number (5) until it reaches 0.
-- This tests the lw, add, beq, noop and halt opcodes.
-- This is also a test of basic simulator tasks (loading words, branching and how loops are created).
-
-2.)Test2: multiplicationTest.txt
-
-- This is the multiplication function that is part 3 of the project. we have also used it as a test case.
-- On top of the cases tested in test1, test2 tests the nand function as well as more complex instruction sets.
-- This also tests that all 7 registers may be used.
-
-3.) Test3: add10.txt
-
-- This is another simple loop that adds the numbers 0-10 together. Then, it stores the result to memory
-- Test3 tests the sw function and its ability to properly store data to the correct location in memory.
-
-4.)Test 4: jalrTest.txt
-
-- This tests the jalr opcode.
